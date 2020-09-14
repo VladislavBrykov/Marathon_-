@@ -10,9 +10,10 @@ int mx_factorial_rec(int n) {
     	return n;
 }
 
-int main ()
-{
-printf ("%d\n", mx_factorial_rec(5));
-return 0;
+/*
+int main () {
+	printf ("%d\n", mx_factorial_rec(5));
+	return 0;
 }
+*/
 

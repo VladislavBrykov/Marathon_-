@@ -8,14 +8,14 @@ int mx_factorial_iter(int n) {
 		fact = fact * i;
 	if(fact <= 214783647)
 		return fact;
-	//	printf("%d", fact);
 	else if(fact > 2147473647)
 		return 0;
 	return 0;
 }
 
-//int main()
-//{
-//	mx_factorial_iter(5);
-//	return 0;
-//}
+/*
+int main() {
+	mx_factorial_iter(5);
+	return 0;
+}
+*/

@@ -19,9 +19,10 @@ void mx_printstr(const char *s) {
 int main(int argc, char *argv[]) {
 	argc = 1;
 	int i = 1;
+	
 	while(argv[i] != '\0') {
-	mx_printstr(argv[i]);
-	mx_printchar('\n');
+		mx_printstr(argv[i]);
+		mx_printchar('\n');
 	i++;
 	}
 }

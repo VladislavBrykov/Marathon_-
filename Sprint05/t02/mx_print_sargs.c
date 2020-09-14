@@ -42,6 +42,5 @@ int main(int argc, char *argv[]) {
 		mx_printstr(argv[i]);
 		mx_printchar('\n');
 	}
-
 	return 0;
 }
