@@ -10,12 +10,10 @@ char *mx_strcpy(char *dst, const char *src) {
 	return dst;
 }
 
-int mx_strlen(const char *s)
-{
+int mx_strlen(const char *s) {
 	int i = 0;
-	while(s[i]) {
+	while(s[i])
 		i++;
-	}
 	return i;
 }
 
@@ -24,7 +22,7 @@ char *mx_strnew(const char size) {
 
 	if(arr != NULL && size > 0) {
 		for(int i = 0; i <= size+1; i++) 
-					arr[i] = '\0';
+			arr[i] = '\0';
 		return arr;
 	}
 	return NULL;
@@ -37,19 +35,8 @@ char *mx_strdup(const char *str) {
 	return arr;
 }
 
-int main() {
-	char str[6] = "Hello";
-	printf("%s\n", mx_strdup(str));
-	return 0;
-}
-
-/*strcpy - копирует данные из строки, на которую указывает аргумент 
-source, в строку, на которую указывает аргумент destination, пока не 
-встретится символ конца строки (нулевой символ). Копирование производится 
-вместе с символом конца строки.
-
-strlen - длина строки
-
-strnew - выделяет память для строки определенного размера и одного 
-дополнительного байта для '\0'
-*/
+// int main() {
+// 	char str[6] = "Hello";
+// 	printf("%s\n", mx_strdup(str));
+// 	return 0;
+// }

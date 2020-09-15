@@ -20,13 +20,11 @@ char *mx_strnew(const char size) {
 	return NULL;
 }
 
-int mx_strlen(const char *s)
-{
+int mx_strlen(const char *s) {
 	int i = 0;
 
-	while(s[i]) {
+	while(s[i])
 		i++;
-	}
 	return i;
 }
 
@@ -35,7 +33,8 @@ char *mx_strcpy(char *dst, const char *src) {
 
 	while (src[count]) {
 		dst[count] = src[count];
-		count++; }
+		count++; 
+	}
 	dst[count] = '\0';
 	return dst;
 }
@@ -55,21 +54,23 @@ char *mx_strcat_new(char *s1, const char *s2) {
 		s1[lenght1] = s2[i];
 		lenght1++;
 		i++;
-		}
+	}
 	s1[lenght1] = '\0';
 	return s1;
 }
 
 char *mx_strjoin(char const *s1, char const *s2) {
 	if(s1 != NULL && s2 != NULL) {
-	char *dubl_s1 = mx_strdup(s1);
-	char *s1s2 = mx_strcat_new(dubl_s1, s2);
-	return s1s2;
+		char *dubl_s1 = mx_strdup(s1);
+		char *s1s2 = mx_strcat_new(dubl_s1, s2);
+		return s1s2;
 	}
+	
 	else if(s1 == NULL && s2 != NULL) {
 		char *dubl_s2 = mx_strdup(s2);
 		return dubl_s2;
 	}
+	
 	else if(s2 == NULL && s1 != NULL) {
 		char *dubl_s1 = mx_strdup(s1);
 		return dubl_s1;
@@ -77,12 +78,8 @@ char *mx_strjoin(char const *s1, char const *s2) {
 	return NULL;
 }
 
-/*function*/
-
 char *mx_concat_words(char **words) {
-	
-	int int main()
-	{
+	int int main() {
 		char *words = {"Free", "your", "mind.", NULL};
 		mx_concat_words(words);
 		return 0;

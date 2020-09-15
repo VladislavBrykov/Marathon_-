@@ -1,12 +1,3 @@
-/*
-Create a function that:
-• takes a pointer to a string
-• frees the string's memory with free
-• sets the string to NULL
-*/
-
-
-
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -17,8 +8,8 @@ void mx_strdel(char **str) {
 	}
 }
 
-/*int main()
-{
+/*
+int main() {
 	char *s1 = malloc(5 * sizeof(*s1));
 		if(s1 != NULL) {
 		for(int i = 0; i <= 5; i++) 
@@ -31,9 +22,4 @@ void mx_strdel(char **str) {
 	return 0;
 	}
 }
-
-Для проверки выделяю память под указатель, заполняю ее нулями и печатаю.
-Закидываю в функцию, где память очищается и значение присваивается NULL.
-Снова печатаю - выводит NULL,
 */
-
