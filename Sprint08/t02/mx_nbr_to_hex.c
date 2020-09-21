@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static void swap_char(char *s1, char *s2){
+static void swap_char(char *s1, char *s2) {
   char x = *(s1);
   *(s1) = *(s2);
   *(s2) = x;
@@ -41,18 +41,20 @@ char *mx_nbr_to_hex(unsigned long nbr) {
   int lenght = 1;
   int temp;
   int i = 0;
-  while((nbr2 / 10) > 1){
+
+  while((nbr2 / 10) > 1) {
     nbr2 /= 10;
     lenght++;
   }
+
   char *string = strnew(lenght);
-  //char str[2] = {0};
+
   while(nbr != 0){
     temp = nbr % 16;
     if(temp < 10){
       string[i] = 48 + temp;
     }
-    else{
+    else {
       string[i] = 87 + temp;
     }
     nbr /= 16;

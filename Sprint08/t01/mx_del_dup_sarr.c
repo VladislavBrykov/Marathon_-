@@ -8,14 +8,14 @@ int *mx_del_dup_arr(int *src, int src_size, int *dst_size){
 	int t = 0;
 	int arr[src_size];
 
-	for(int i = 0; i < src_size; i++){
-		for(int j = 0; j < size; j++){
+	for(int i = 0; i < src_size; i++) {
+		for(int j = 0; j < size; j++) {
 			if(arr[j] == src[i]){
 				t = 1;
 			}
 		}
 
-		if(t == 1){
+		if(t == 1) {
 			t = 0;
 		}
 		else {
@@ -31,8 +31,7 @@ int *mx_del_dup_arr(int *src, int src_size, int *dst_size){
 	return p;
 }
 
-int main()
-{
+int main() {
 	int src[] = { 5, 3, 3, 2, 1 };
 	int dst_size[6];
 	printf("%d\n", *mx_del_dup_arr(src, 5, dst_size));

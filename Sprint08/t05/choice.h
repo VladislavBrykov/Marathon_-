@@ -1,5 +1,6 @@
 #ifndef CHOICE_H
 #define CHOICE_H
+
 #include <stdio.h>
 
 char *mx_strdup(const char *str);
