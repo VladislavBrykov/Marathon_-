@@ -17,3 +17,4 @@ bool mx_isspace(char c);
 int mx_atoi(const char *str);
 
 #endif
+
