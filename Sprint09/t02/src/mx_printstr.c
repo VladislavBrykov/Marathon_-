@@ -4,8 +4,9 @@ void mx_printstr(const char *s){
   write(1, s, mx_strlen(s));
 }
 
-//int main()
-//{
-//	mx_printstr("gfhgj");
-//	return 0;
-//}
+/*
+int main() {
+	mx_printstr("gfhgj");
+	return 0;
+}
+*/

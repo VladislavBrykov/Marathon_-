@@ -21,5 +21,4 @@ int main() {
 
 	int result4 = MX_IS_ODD(y);
 	printf("MX_IS_ODD:  %d\n", result4);
-
 }

@@ -1,6 +1,6 @@
 //#include <stdio.h>
 
-int mx_strlen(const char *s){
+int mx_strlen(const char *s) {
   int i;
   int j = 0;
 
@@ -12,7 +12,8 @@ int mx_strlen(const char *s){
   return i;
 }
 
-//int main () {
-//printf("%d",mx_strlen("asddf"));
-//}
-
+/*
+int main () {
+printf("%d",mx_strlen("asddf"));
+}
+*/

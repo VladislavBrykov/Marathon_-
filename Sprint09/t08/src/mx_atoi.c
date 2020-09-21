@@ -1,7 +1,6 @@
 #include <stdbool.h>
 
 bool mx_isdigit(int c);
-
 bool mx_isspace(int c);
 
 int mx_atoi(const char *str) {
@@ -19,7 +18,9 @@ int mx_atoi(const char *str) {
   return res;
 }
 
-//int main () {
-//    mx_atoi("ghjhkkkj");
-//}
+/*
+int main () {
+   mx_atoi("ghjhkkkj");
+}
+*/
 

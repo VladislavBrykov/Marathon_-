@@ -19,9 +19,10 @@ int mx_strcmp(const char *s1, const char *s2) {
     return 0;
 }
 
-//int main () {
-//char a [] = "rabbit";
-//char b []= "Follow";
-//printf ("%d\n",mx_strcmp(a, b));
-//}
-
+/*
+int main () {
+char a [] = "rabbit";
+char b []= "Follow";
+printf ("%d\n",mx_strcmp(a, b));
+}
+*/

@@ -2,6 +2,7 @@
 
 void mx_printint(int n) {
 long num = n;
+
 if (num < 0) {
     mx_printchar('-');
     num *= -1;

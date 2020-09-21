@@ -7,6 +7,7 @@ int mx_atoi(const char *str) {
   int i = 0;
   int n = 0;
   int m = 1;
+  
   if(str[i] == '-') {
     m = -1;
     i++;
