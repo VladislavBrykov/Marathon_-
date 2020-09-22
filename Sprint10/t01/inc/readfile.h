@@ -8,7 +8,6 @@
 #include <string.h>
 #include <errno.h>
 
-
 int mx_strlen(const char *s);
 void mx_printerr(const char *s);
 

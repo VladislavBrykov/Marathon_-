@@ -1,5 +1,4 @@
 #include "mx_wc.h"
-​
 int main(int argc, char const *argv[]) {
 	char buff;
 	int lines = 0, words = 0, characters = 0;
