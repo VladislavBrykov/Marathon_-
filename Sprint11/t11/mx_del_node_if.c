@@ -1,7 +1,6 @@
 #include "list.h"
 
-void
-mx_del_node_if(t_list **list, void *del_data, bool (*cmp)(void *a, void *b)) {
+void mx_del_node_if(t_list **list, void *del_data, bool (*cmp)(void *a, void *b)) {
     t_list *temp;
     t_list *next = NULL;
 

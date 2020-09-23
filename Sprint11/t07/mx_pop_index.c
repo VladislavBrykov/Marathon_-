@@ -4,7 +4,6 @@ void mx_pop_index(t_list **list, int index) {
     t_list *p_node = *list;
     int p_index = 0;
 
-
     if (index < 1)
         mx_pop_front(&p_rnode);
     while (p_rnode) {

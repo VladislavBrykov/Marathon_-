@@ -7,7 +7,7 @@ void mx_clear_list(t_list **list) {
 	yzel = *list;
 	while (yzel) {
 		new_yzel = yzel->next;
-		free(yzel);              //ochistka pamati
+		free(yzel);
 		yzel = new_yzel; }
 	*list = NULL;
 }

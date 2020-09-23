@@ -3,11 +3,11 @@
 
 #include <stdlib.h>
 
-typedef struct s_list   //sozdanie nowogo tipa
+typedef struct s_list
 {
-	void *data;    //hranimoe znachenie
-	struct s_list *next;  //ykazatel na sledusiy yzel
-}		t_list;   //nazvanie stryktyru
+	void *data;
+	struct s_list *next;
+}		t_list;
 
 void mx_clear_list(t_list **list);
 
