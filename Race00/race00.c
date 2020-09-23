@@ -1,10 +1,8 @@
 void mx_printstr(const char *s);
-
 void mx_printchar(char c);
-
 int mx_strlen(const char *s);
 
-static void bottom_topBorder(int width){
+static void bottom_topBorder(int width) {
   int border;
 
   for (border = 0; border < width; border++){
@@ -21,7 +19,7 @@ static void bottom_topBorder(int width){
   mx_printstr("\n");
 }
 
-static void left_rightBorder(int line){
+static void left_rightBorder(int line) {
   if(line % 2 == 0){
     mx_printchar('*');
   } else {
@@ -29,7 +27,7 @@ static void left_rightBorder(int line){
   }
 }
 
-void race00(int map_length, int map_width, int one_y, int one_x){
+void race00(int map_length, int map_width, int one_y, int one_x) {
   int h, w;
 
   if (map_width + map_length <= 1 || map_width < one_x || map_length < one_y) {
@@ -47,7 +45,7 @@ void race00(int map_length, int map_width, int one_y, int one_x){
 	}
 	left_rightBorder(h);
 	mx_printchar('\n');
-      }
-      bottom_topBorder(map_width);
+    }
+    bottom_topBorder(map_width);
   }
 }
