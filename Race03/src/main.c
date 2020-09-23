@@ -3,6 +3,7 @@
 int main(int argc, char const *argv[]) {
 	int *c = 0;
 	char *b = NULL;
+	
 	if (argc != 6) {
 		mx_printerr("usage: ./race03 [card1] [card2] [card3] [card4] [card5]\n");
 		return 0;
